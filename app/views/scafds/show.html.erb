@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+
+<div> <!--leftbox-->
+  <%= image_tag(@scafd.image.url) %>
+</div>
+
+<div> <!--rightbox-->
+  <p>Name</p>
+  <%= @scafd.user_name %>
+  
+  <p>Birth</p>
+  <%= @scafd.birth %>
+  
+  <p>University</p>
+  <%= @scafd.univ %>
+  
+  <p>Major</p>
+  <%= @scafd.major %>
+</div>
+
+
+<%= link_to 'Edit', edit_scafd_path(@scafd) %> |
+<%= link_to 'Back', scafds_path %>

@@ -1,0 +1,499 @@
+<head>
+  <style>
+  .dropdown {
+         position: relative;
+      display: inline-block;
+      float: right;
+  
+  }
+  
+  A:link, A:visited { 
+  text-decoration:none; 
+  
+  }
+  
+  
+  .dropdown-content {
+            text-align: right;
+      display: none;
+      position: absolute;
+      background-color: #ebba16;
+      border-radius: 30px;
+      min-width: 300px;
+      height: 35px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      margin-top: 28px;
+     margin-left: -313px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+      display: block;
+       
+  
+  }
+  
+  .desc {
+      padding: 15px;
+      text-align: center;
+          font-size: 15px;
+          margin-top: -7px;
+  
+  }
+  
+  body {
+   font-family:'NanumSquareB';
+   margin: 0;
+  	}
+  
+  .left-box {
+    background: white;
+    float: left;
+    width: 50%;
+    height: 720px;
+    background:url('bg.png');
+    background-position:center;
+  
+   
+  }
+  .left-box:hover{
+   background:url('bg2.png');
+   background-position:center;
+  }
+  
+  .right-box {
+    background: #81c684;
+    float: right;
+    width: 50%;
+    height: 720px;
+  }
+  
+  .menu {
+  	width : 50px;
+  	height: 50px;
+  	float: right;
+  	margin-top: 20px;
+  	margin-right: 20px;
+  	
+  }
+  
+  
+  
+  .title{
+  	margin-top: 100px;
+  	text-align: center;
+  	font-size: 20px;
+  	color :white;
+  }
+  
+  .s:hover{
+    opacity: 0.7;
+  }
+  
+  .s{
+  	
+  display:block;
+  margin:0 auto; 
+  border-radius: 100px;
+  }
+  
+  .subtitle{
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .subject{
+     text-align: center;
+     font-size: 20px;
+  }
+  
+  .subject2{
+     text-align: center;
+     font-size: 11px;
+     line-height: 23px;
+     letter-spacing: 0.5px;
+  }
+  
+  
+  
+  .crown{
+  	display:block;
+  margin:0 auto; 
+  width: 50px;
+  height: 50px;
+  }
+  
+  
+  
+  html{
+    height:100%;
+  }
+  body{
+    text-align:center;
+  
+  
+  }
+ 
+  button{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  button.af{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button.af:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  button.af:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button.af:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button.af:hover:before,button.af:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+
+    body{
+  	margin: 0px;
+
+  }
+  
+  #left{
+  	position: absolute;
+  	height: 670px;
+  	width: 50%;
+  	background-color: white;
+  	text-align: center;
+  }
+  
+  #right{
+  	width: 50%;
+  	height: 653px;
+  	position: absolute;
+  	margin-left: 50%;
+  	text-align: center;
+  }
+  
+  p{
+  	margin: 0px;
+  }
+  
+  #tri{
+  	width: 30px;
+  	height: 50px;
+  	position: absolute;
+  	margin-left: -0.3%;
+  	margin-top: 6%;
+  }
+  
+  #qust_one{
+  	font-size: 25px;
+  	margin-top: 10%;
+  	margin-bottom: 3%;
+  	font-weight: bold;
+  	color: #ffffff;
+  }
+  
+  #img_first{
+  	margin-top: 8%;
+  	width: 300px;
+  	height: 300px;
+  	border: 2px #ffffff solid;
+  	-webkit-border-radius: 200px;
+  }
+  
+  #quse_one_content{
+  	margin-top: 8%;
+  	font-size: 30px;
+  	font-weight: bold;
+  	color: white;
+  }
+  
+  #choice{
+  	margin-top: 5%;
+  	font-size: 25px;
+  	color: white;
+  }
+  
+  #hr_1{
+  	margin-top: 0px;
+  	margin-bottom: 5%;
+  }
+  
+  #answer_hr{
+  	margin-top: 1%;
+  	margin-bottom: 5%;
+  }
+  
+  #circle{
+  	margin-left: 2%;
+  	margin-right: 2%;
+  	margin-top: 10%;
+  	display: inline-block;
+  	width: 10px;
+  	height: 10px;
+  	-webkit-border-radius: 100px;
+  	-moz-border-radius: 100px;
+  }
+  
+  .c_1{
+  	background-color: #e91e63;
+  }
+  
+  .c_2, .c_3, .c_4, .c_5{
+  	background-color: #e1e1e1;
+  }
+  
+  span{
+  	margin-right: 35%;
+  	margin-left: 5%;
+  }
+  
+  .menu {
+     width : 50px;
+     height: 50px;
+     float: right;
+     margin-top: 20px;
+     margin-right: 20px;   
+  }
+  
+  #main_content{
+  	font-size: 25px;
+  	margin-top: 10%;
+  	margin-right: 3%;
+  	padding-bottom: 3%;
+  	font-weight: bold;
+  	color: black;
+  }
+  
+  input.img1{
+  height:150px;
+  }
+  
+  #persent{
+  	font-size: 50px;
+  	font-weight: bold;
+  	margin-top: 15%;
+  }
+  
+  #sub_title{
+  	margin-top: 5%;
+  	font-size: 17px;
+  	font-weight: bold;
+  	text-align: left;
+  	margin-left: 16%;
+  	line-height: 40px;
+  }
+  
+  #sub_content{
+  	margin-top: 3%;
+  	font-size: 15px;
+  }
+  
+  button{
+  	text-align: center;
+  	background:#f1a93f;
+  	color:#fff;
+  	border:none;
+  	position:relative;
+  	height: 50px;
+  	width: 30%;
+  	font-size:1em;
+  	padding:0 2em;
+  	cursor:pointer;
+  	transition:800ms ease all;
+  	outline:none;
+  	border-radius: 5px;
+  	margin-top: 10%;
+  	margin-left: 3%;
+  	margin-right: 3%;
+  }
+  button:hover{
+  	background:#fff;
+  	color: gray;
+  }
+  button:before,button:after{
+  	content:'';
+  	position:absolute;
+  	top:0;
+  	right:0;
+  	height:2px;
+  	width:0;
+  	background: gray;
+  	transition:400ms ease all;
+  }
+  button:after{
+  	right:inherit;
+  	top:inherit;
+  	left:0;
+  	bottom:0;
+  }
+  button:hover:before,button:hover:after{
+  	width:100%;
+  	transition:800ms ease all;
+  }
+
+</style>    
+</head>
+<body style="background-color: #f1a93f;">
+
+  <%= form_tag scafds_create_path, multipart: true do %>
+	<div id="left">
+		<p id="main_content">자퇴테스트</p>
+		<hr id="answer_hr" width="33%" color="black">
+	  <input type="hidden" name = "score" value="<%= @score %>">
+		<p id="sub_title">
+		  자신이 자퇴했을 때 모습이 나타나는 얼굴사진을 올리세요<br>
+			사진 <%= file_field_tag :image %>
+			<br>
+			이름 <input type="text" name="user_name">		<br>	생년월일  <select class="" name="">
+      <option value="">2000</option>
+      <option value="">1999</option>
+      <option value="">1998</option>
+      <option value="">1997</option>
+      <option value="">1996</option>
+      <option value="">1995</option>
+      <option value="">1994</option>
+      <option value="">1993</option>
+      <option value="">1992</option>
+      <option value="">1991</option>
+      <option value="">1990</option>
+      </select> 년
+      <select class="" name="">
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+      <option value="">5</option>
+      <option value="">6</option>
+      <option value="">7</option>
+      <option value="">8</option>
+      <option value="">9</option>
+      <option value="">10</option>
+      <option value="">11</option>
+      <option value="">12</option>
+      </select> 월
+       <select class="" name="">
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+      <option value="">5</option>
+      <option value="">6</option>
+      <option value="">7</option>
+      <option value="">8</option>
+      <option value="">9</option>
+      <option value="">10</option>
+      <option value="">11</option>
+      <option value="">12</option>
+      <option value="">13</option>
+      <option value="">14</option>
+      <option value="">15</option>
+      <option value="">16</option>
+      <option value="">17</option>
+      <option value="">18</option>
+      <option value="">19</option>
+      <option value="">20</option>
+      <option value="">21</option>
+      <option value="">22</option>
+      <option value="">23</option>
+      <option value="">24</option>
+      <option value="">25</option>
+      <option value="">26</option>
+      <option value="">27</option>
+      <option value="">28</option>
+      <option value="">29</option>
+      <option value="">30</option>
+      <option value="">31</option>
+      </select> 일<br> 
+			대학교 <select name="univ" size=1 multiple><option>강원대</option>
+		<option>국민대</option>
+		<option>서울시립대</option>
+		<option>동국대</option>
+		<option>덕성여대</option> 
+		<option>성결대</option>
+		<option>아주대</option>
+		<option>한국외대</option>
+		<option>성신여대</option>
+		<option>아주대</option>
+		<option>남서울대</option>
+		<option>경기대</option>
+		</select><br>
+			학과 <input type="text" name="major" value="학과">
+
+
+		</p>
+
+		<button>CREDIT</button>
+		<% end %>
+	</div>
+
+	<img id="tri" src="/assets/triangle.png">
+
+	<div id="right">
+		<p id="qust_one">ㅠㅠ</p>
+		<hr width="30%" color="#ffffff">
+
+		<img id="img_first" src="https://pbs.twimg.com/profile_images/715935653175754752/siZJedFG_400x400.jpg">
+
+		<p id="quse_one_content">나는 누구죠?</p>
+	</div>
+
+	
+</body>
+

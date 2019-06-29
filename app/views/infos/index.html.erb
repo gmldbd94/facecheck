@@ -1,0 +1,257 @@
+
+<div class='left-box'>
+		
+	<div class="subtitle"><br><img  src="/assets/logo2.png"></div>
+
+	<div class="subject">'당신의 자퇴를 도와드립니다'</div><br>
+	<div class="subject2">학교의 자퇴여부에 대해 고민인 당신에게, 결정에 도움을 줄 수 있는 서비스입니다.<br>자퇴각은 당신의 관상과 운세를 알아보면서 자퇴가 적합한 인물인지를 평가해 줄 수 있습니다.  <br><br></div>
+	<button onclick = "location.href = '<%= @choice_url %>' " class="af">시작</button>
+
+
+</div>
+<div class='right-box'>
+  	<div class="dropdown">
+<img class="menu" src="/assets/menu.png" alt="Trolltunga Norway">
+  <div class="dropdown-content">
+    <div class="desc"><a href="../infos/index"> &nbsp;&nbsp;자퇴각&nbsp;|&nbsp;</a><a href="/choice/first">자퇴테스트&nbsp;|&nbsp;</a><a href="">자퇴위인&nbsp;|&nbsp;</a><a href="/infos/school.html">자퇴Tip&nbsp;&nbsp;</a>
+    </div>
+
+  </div>
+</div>
+
+	
+
+	<div class='title'>자퇴각 뽐뿌 위인</div><hr width="170px"><br>
+	
+	<img class='crown' src="/assets/crown.png">
+	<img class='s' src="/assets/1.jpg"><br><br>
+
+
+	
+	    <a href="/infos/greats"><button>더 보기</button></a>
+
+
+	
+</div>
+
+<style>
+.dropdown {
+       position: relative;
+    display: inline-block;
+    float: right;
+
+}
+
+A:link, A:visited { 
+text-decoration:none; 
+
+}
+
+
+.dropdown-content {
+          text-align: right;
+    display: none;
+    position: absolute;
+    background-color: #ebba16;
+    border-radius: 30px;
+    min-width: 300px;
+    height: 35px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 28px;
+   margin-left: -290px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+     
+
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+        font-size: 15px;
+        margin-top: -7px;
+    font-family: 'NanumSquareB'
+}
+
+	body {
+    background-color: white;
+ font-family:'NotoSans-Regular';
+ margin: 0;
+	}
+
+.left-box {
+  background: white;
+  float: left;
+  width: 50%;
+  height: 720px;
+  background:url('/assets/bg.png');
+  background-position:center;
+
+ 
+}
+.left-box:hover{
+ background:url('/assets/bg2.png');
+ background-position:center;
+}
+
+.right-box {
+  background: #81c684;
+  float: right;
+  width: 50%;
+  height: 720px;
+}
+
+.menu {
+	width : 50px;
+	height: 50px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	
+}
+
+.title{
+	margin-top: 100px;
+	text-align: center;
+	font-size: 20px;
+	color :white;
+	font-family: 'NanumSquareB'
+}
+
+.s:hover{
+  opacity: 0.7;
+}
+
+.s{
+	
+display:block;
+margin:0 auto; 
+border-radius: 100px;
+}
+
+.subtitle{
+  text-align: center;
+  font-size: 50px;
+}
+
+.subject{
+  font-family: 'NanumSquareB';
+   text-align: center;
+   font-size: 20px;
+}
+
+.subject2{
+  font-family: 'NanumSquareB';
+   text-align: center;
+   font-size: 11px;
+   line-height: 23px;
+   letter-spacing: 0.5px;
+}
+
+
+
+.crown{
+	display:block;
+margin:0 auto; 
+width: 50px;
+height: 50px;
+}
+
+
+
+body{
+  text-align:center;
+}
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+button{
+  font-family: 'NanumSquareB';
+  text-align:center;
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  width: 230px;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+
+
+button.af{
+    font-family: 'NanumSquareB';
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+button.af:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button.af:before,button:after{
+    font-family: 'NanumSquareB'
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button.af:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button.af:hover:before,button.af:hover:after{
+  width:100%;
+  transition:800ms ease all;
+    font-family: 'NanumSquareB'
+}
+</style>

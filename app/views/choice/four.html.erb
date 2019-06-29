@@ -1,0 +1,180 @@
+<div id="left">
+		<p id="qust_one">Question 4/5</p>
+		<hr width="30%" color="#e91e63">
+
+		<img id="img_first" src="https://scontent.cdninstagram.com/vp/0b55a92870a0dd00ede41bd084c85ca4/5B551346/t51.2885-15/e35/30084587_316448928884836_3507564546418016256_n.jpg">
+
+		<p id="quse_one_content">자주 격렬하게 공부가 하기 싫다.</p>
+
+		<p id="circle" class="c_2"></p>
+		<p id="circle" class="c_3"></p>
+		<p id="circle" class="c_4"></p>
+		<p id="circle" class="c_1"></p>
+		<p id="circle" class="c_5"></p>
+
+	</div>
+
+	<img id="tri" src="/assets/triangle.png">
+
+	<div id="right">
+		<p id="select_content">Select Answer Below</p>
+
+		<hr id="answer_hr" width="30%" color="#ffffff">
+		<a href="/choice/five/<%= @score.to_i + 3 %>"><button> <span> A </span>그렇다</button></a>
+		<hr id="hr_1" width="70%" color="#ffffff">
+		<a href="/choice/five/<%= @score.to_i + 2 %>"><button> <span> B </span>보통이다</button></a>
+		<hr id="hr_1" width="70%" color="#ffffff">
+		<a href="/choice/five/<%= @score.to_i + 0 %>"><button> <span> C </span>아니다</button></a>
+		<hr id="hr_1" width="70%" color="#ffffff">
+		<a href="/choice/five/<%= @score.to_i + 1 %>"><button> <span> D </span>모르겠다</button></a>
+		<hr id="hr_1" width="70%" color="#ffffff">
+	</div>
+	
+	<style>
+		
+		body{
+			font-family: 'NanumSquareB';
+	margin: 0px;
+	background-color: #ec3e79;
+}
+
+#left{
+	position: absolute;
+	height: 653px;
+	width: 50%;
+	background-color: white;
+	text-align: center;
+}
+
+#right{
+	width: 50%;
+	height: 653px;
+	position: absolute;
+	margin-left: 50%;
+	text-align: center;
+}
+
+p{
+	margin: 0px;
+}
+
+
+#tri{
+	width: 30px;
+	height: 50px;
+	position: absolute;
+	margin-left: 49%;
+	margin-top: 6%;
+}
+
+#qust_one{
+	font-size: 25px;
+	margin-top: 10%;
+	margin-bottom: 3%;
+	font-weight: bold;
+	color: #e91e63;
+}
+
+#img_first{
+	margin-top: 8%;
+	width: 250px;
+	height: 250px;
+	border: 2px #e91e63 solid;
+	-webkit-border-radius: 200px;
+}
+
+#quse_one_content{
+	margin-top: 8%;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+
+#select_content{
+	font-size: 25px;
+	margin-top: 10%;
+	padding-bottom: 3%;
+	font-weight: bold;
+	color: white;
+}
+
+#choice{
+	margin-top: 5%;
+	font-size: 25px;
+	color: white;
+}
+
+button{
+	text-align: left;
+	background:#ec3e79;
+	color:#fff;
+	border:none;
+	position:relative;
+	height: 80px;
+	width: 70%;
+	font-size:1em;
+	padding:0 2em;
+	cursor:pointer;
+	transition:800ms ease all;
+	outline:none;
+	border-radius: 5px;
+}
+button:hover{
+	background:#fff;
+	color: #ec1f64;
+}
+button:before,button:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: #ec1f64;
+	transition:400ms ease all;
+}
+button:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+}
+button:hover:before,button:hover:after{
+	width:100%;
+	transition:800ms ease all;
+}
+
+#hr_1{
+	margin-top: 0px;
+	margin-bottom: 5%;
+}
+
+#answer_hr{
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+
+#circle{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10%;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}
+
+.c_1{
+	background-color: #e91e63;
+}
+
+.c_2, .c_3, .c_4, .c_5{
+	background-color: #e1e1e1;
+}
+
+span{
+	margin-right: 35%;
+	margin-left: 5%;
+}
+	</style>
